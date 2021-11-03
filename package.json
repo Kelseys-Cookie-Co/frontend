@@ -3,12 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {
-    "nodemon": "^2.0.14"
-  },
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon index.js",
+    "migrate": "npx knex migrate:latest --knexfile db/knexfile.js"
   },
   "repository": {
     "type": "git",
@@ -16,9 +13,17 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/kwnie/bilodough/issues"
   },
-  "homepage": "https://github.com/kwnie/bilodough#readme"
+  "homepage": "https://github.com/kwnie/bilodough#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "knex": "^0.95.12",
+    "pg": "^8.7.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  }
 }

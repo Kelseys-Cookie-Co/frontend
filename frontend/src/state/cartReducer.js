@@ -1,4 +1,4 @@
-import { ADD_TO_CART, ADD_QUANTITY, SUB_QUANTITY } from '../actions/cartActions'
+import { ADD_TO_CART, ADD_QUANTITY, SUB_QUANTITY } from './cartActions'
 import cookieData from '../cookieData'
 
 const initialState = {

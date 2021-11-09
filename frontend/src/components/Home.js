@@ -2,7 +2,6 @@ import React from "react";
 import { useAuth0 } from "@auth0/auth0-react";
 import { Link } from 'react-router-dom'
 import { Profile } from './Profile'
-import { Cart } from './Cart'
 import { Cookies } from './Cookies'
 
 const Home = () => {
@@ -16,7 +15,6 @@ const Home = () => {
     </button>
     <Link to='/cart'>Cart</Link>
     <Profile />
-    <Cart />
 
     <h1>Kelsey's Cookie Co.</h1>
     <Cookies />

@@ -1,6 +1,6 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
-import { addToCart, addQuantity, subtractQuantity } from '../actions/cartActions'
+import { addToCart, addQuantity, subtractQuantity } from '../state/cartActions'
 
 export const Quantity = ({cookie}) => {
   const dispatch = useDispatch()

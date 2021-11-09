@@ -5,7 +5,7 @@ import { Auth0Provider } from '@auth0/auth0-react'
 import { createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk'
 import { Provider } from 'react-redux';
-import { cartReducer } from './reducers/cartReducer';
+import { cartReducer } from './state/cartReducer';
 import Home from './components/Home'
 import Cart from './components/Cart'
 

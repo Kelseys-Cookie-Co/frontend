@@ -14,7 +14,7 @@ export const Profile = () => {
         grant_type: 'client_credentials',
         client_id: process.env.REACT_APP_AUTH0_ID,
         client_secret: process.env.REACT_APP_AUTH0_SECRET,
-        audience: `https://${process.env.REACT_APP_DOMAIN}/api/v2/`
+        audience: `https://${process.env.REACT_APP_AUTH0_DOMAIN}/api/v2/`
       }
     };
   

@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@auth0/auth0-react": "^1.8.0",
+    "@paypal/react-paypal-js": "^7.4.2",
     "@testing-library/jest-dom": "^5.15.0",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
@@ -14,8 +15,7 @@
     "react-router-dom": "^6.0.0",
     "react-scripts": "^3.4.4",
     "redux": "^4.1.2",
-    "redux-thunk": "^2.4.0",
-    "yup": "^0.32.11"
+    "redux-persist": "^6.0.0"
   },
   "scripts": {
     "start": "react-scripts start",

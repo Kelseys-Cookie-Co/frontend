@@ -2,6 +2,10 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "17.0.1",
+    "npm": "8.1.0"
+  },
   "dependencies": {
     "@auth0/auth0-react": "^1.8.0",
     "@paypal/react-paypal-js": "^7.4.2",

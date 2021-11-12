@@ -1,32 +1,12 @@
-import React from 'react';
+import React from 'react'
 import ReactDOM from "react-dom";
-import { BrowserRouter as Router, useRoutes } from 'react-router-dom';
-
+import { BrowserRouter as Router } from 'react-router-dom';
 import { Provider } from 'react-redux';
-
 import { store, persistor } from './configureStore'
 import { PersistGate } from 'redux-persist/integration/react'
-
 import { PayPalScriptProvider } from "@paypal/react-paypal-js";
-
 import { Auth0Provider } from '@auth0/auth0-react'
-
-import Home from './components/Home'
-import Cart from './components/Cart'
-import Complete from './components/Complete'
-import Cancel from './components/Cancel'
-import Error from './components/Error'
-
-const App = () => {
-  let routes = useRoutes([
-    { path: "/", element: <Home /> },
-    { path: "/cart", element: <Cart /> },
-    { path: "/complete", element: <Complete /> },
-    { path: "/cancel", element: <Cancel /> },
-    { path: "/error", element: <Error /> }
-  ]);
-  return routes
-}
+import { App } from './App'
 
 ReactDOM.render(
   <Router>
